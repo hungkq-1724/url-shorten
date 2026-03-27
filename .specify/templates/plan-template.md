@@ -31,7 +31,16 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- [ ] TypeScript strict compliance defined: no unbounded `any`, boundary
+  validation strategy documented, and typed env/config approach specified.
+- [ ] Next.js architecture compliance defined: App Router paths (`app/`) and
+  Server/Client Component boundaries justified.
+- [ ] Mutation path compliance defined: all write operations mapped to Server
+  Actions with authz/authn checks and typed result contracts.
+- [ ] Supabase governance compliance defined: required RLS/policy changes,
+  migration strategy, and service-role usage boundaries documented.
+- [ ] UI compliance defined: Tailwind-first styling approach and accessibility
+  acceptance criteria included.
 
 ## Project Structure
 

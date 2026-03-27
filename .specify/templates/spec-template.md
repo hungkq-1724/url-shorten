@@ -89,6 +89,11 @@
 - **FR-003**: Users MUST be able to [key interaction, e.g., "reset their password"]
 - **FR-004**: System MUST [data requirement, e.g., "persist user preferences"]
 - **FR-005**: System MUST [behavior, e.g., "log all security events"]
+- **FR-006**: TypeScript contracts MUST be explicit at all request, action, and data boundaries.
+- **FR-007**: All write operations MUST be implemented via Next.js Server Actions.
+- **FR-008**: Feature routes and layouts MUST use Next.js App Router conventions.
+- **FR-009**: Supabase access rules MUST define required RLS/policy and migration changes.
+- **FR-010**: UI implementation MUST use Tailwind and include accessibility acceptance criteria.
 
 *Example of marking unclear requirements:*
 
@@ -126,3 +131,11 @@
 - [Assumption about scope boundaries, e.g., "Mobile support is out of scope for v1"]
 - [Assumption about data/environment, e.g., "Existing authentication system will be reused"]
 - [Dependency on existing system/service, e.g., "Requires access to the existing user profile API"]
+
+## Constitution Alignment *(mandatory)*
+
+- **CA-001 (TypeScript Strict)**: [Describe type-safety boundaries and any justified exceptions]
+- **CA-002 (App Router)**: [List affected `app/` routes, layouts, loading/error states]
+- **CA-003 (Server Actions)**: [List all mutations and their corresponding server actions]
+- **CA-004 (Supabase Security)**: [List RLS/policy and migration impacts]
+- **CA-005 (Tailwind + A11y)**: [List styling strategy and accessibility verification plan]
